@@ -1,0 +1,96 @@
+body {
+    background-color: #002339;
+}
+
+.container {
+    width: 90%;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.display {
+    width: 50%;
+    margin-top: 50px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px;
+    border-radius: 5px;
+}
+
+.display img {
+   width: 30px;
+    cursor: pointer;
+
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 26px;
+}
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #019f55;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 16px 26px;
+    font-size: 22px;
+    font-weight: 22px;
+}
+
+.custom-checkbox {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: red; /* Adjust the color as needed */
+  }
+ 
+  .example-width {
+    max-width: 180px;
+    width: 100%;
+  }
+
+  .example-label-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 0;
+    max-width: 284px;
+  }
+  
+  .example-result-card .example-value-label {
+    font-weight: 600;
+  }
+  
+
+  .mat-mdc-slider {
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .mat-mdc-card + .mat-mdc-card {
+    margin-top: 8px;
+  }
+
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
