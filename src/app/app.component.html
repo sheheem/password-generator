@@ -1,10 +1,10 @@
 <div class="container p-5">
   <h1 class="text-black"> Password Generator</h1>
   <div class="display">
-    <input type="text" id="password" placeholder="Generate Password">
+    <input type="text" readonly #input placeholder="Generate Password">
     <img src="../assets/copy.png" alt="">
 </div>
-<button class="mt-2">
+<button class="mt-2" (click)="onClick()">
   <img src="../assets/generate.png" alt="">
   Generate Password
 </button>
@@ -22,15 +22,15 @@
           [step]="step"
           [discrete]="thumbLabel"
           [showTickMarks]="showTicks">
-        <input matSliderThumb [(ngModel)]="value">
+        <input matSliderThumb [(ngModel)]="value" (ngModelChange)="onChangeLength($event)">
       </mat-slider>
 </section>
 
 <section class="example-section">
-  <mat-checkbox class="example-margin custom-checkbox" [(ngModel)]="number">Number</mat-checkbox>
-  <mat-checkbox class="example-margin" [(ngModel)]="upperCase">Upper case</mat-checkbox>
-  <mat-checkbox class="example-margin" [(ngModel)]="lowerCase">Lower case</mat-checkbox>
-  <mat-checkbox class="example-margin" [(ngModel)]="symbol">Symbol</mat-checkbox>
+  <mat-checkbox class="example-margin custom-checkbox" [(ngModel)]="number" (ngModelChange)="onChangeNumber($event)">Number</mat-checkbox>
+  <mat-checkbox class="example-margin" [(ngModel)]="upperCase" (ngModelChange)="onChangeUpper($event)">Uppercase</mat-checkbox>
+  <mat-checkbox class="example-margin" [(ngModel)]="lowerCase" (ngModelChange)="onChangeLower($event)">Lowercase</mat-checkbox>
+  <mat-checkbox class="example-margin" [(ngModel)]="symbol" (ngModelChange)="onChangeSymbol($event)">Symbol</mat-checkbox>
 </section>
 
 
